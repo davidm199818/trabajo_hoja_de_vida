@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<div class="contacto">
+    <p class="subtitulo">Contacto:</p>
+
+</div>
+
+<div class="formulario">
+    <form id="form-contacto" method="post">
+        <label for="txt-nombre">Nombre:</label><br />
+        <input type="text" id="txt-nombre" required /><br />
+        <label for="txt-correo">Correo:</label><br />
+        <input type="text" id="txt-correo" required /><br />
+        <label for="txt-asunto">Asunto:</label><br />
+        <input type="text" id="txt-asunto" required /><br />
+        <label for="txt-mensaje">Mensaje:</label><br />
+        <textarea
+          rows="7"
+          type="text"
+          id="txt-mensaje"
+          value="Mensaje"
+          required
+        ></textarea>
+        <input id="btn-input" type="submit" value="Enviar" /><br />
+    </form>
+</div>

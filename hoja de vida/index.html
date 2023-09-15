@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hoja de vida</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        
+        .background-header {
+            background-color: rgba(0, 0, 255, 0.5); 
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; 
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="cabecera">
+        <div class="img">
+            <img src="imagen.jpg" alt="">
+        </div>
+        <div class="contenido">
+            <p class="p-1">Andres David Bolaños Bolaños</p>
+
+        </div>
+    </div>
+
+
+    <div class="sm:hidden">
+        <button id="menu-toggle" class="text-2xl text-white hover:text-gray-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+    </div>
+
+    <nav id="nav-menu" class="hidden sm:block bg-blue-500 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="space-x-4 mx-auto">
+                <a href="infoP.html" class="text-black hover:underline border border-slate-300 hover:border-indigo-300 bg-white rounded-lg shadow-md relative">Informacion Personal</a>
+                <a href="infoA.html" class="text-black hover:underline border border-slate-300 hover:border-indigo-300 bg-white rounded-lg shadow-md relative">Aptitudes y pasatiempos</a>
+                <a href="infoAC.html" class="text-black hover:underline border border-slate-300 hover:border-indigo-300 bg-white rounded-lg shadow-md relative">Informacion Academica</a>
+                <a href="infoL.html" class="text-black hover:underline border border-slate-300 hover:border-indigo-300 bg-white rounded-lg shadow-md relative">Informacion laboral</a>
+                <a href="info.R.html" class="text-black hover:underline border border-slate-300 hover:border-indigo-300 bg-white rounded-lg shadow-md relative">Referencias</a>
+                <a href="info.C.html" class="text-black hover:underline border border-slate-300 hover:border-indigo-300 bg-white rounded-lg shadow-md relative">Contactos</a>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+<script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navMenu = document.getElementById("nav-menu");
+
+    menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("hidden");
+    });
+</script>
+
+</body>
+</html>
